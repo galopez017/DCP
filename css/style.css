@@ -6,7 +6,7 @@
 }
 
 :root {
-  --cream: #f8fafc;
+  --cream: #f8fafcb6;
   --paper: #ffffff;
   --ink: #0f172a;
   --muted: #64748b;
@@ -161,6 +161,33 @@ img {
 
 
 /*CONFIGURACION DEL HERO */
+
+.btn-coffee{
+  background-color:#e16a03;
+  color:#92abce;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 10px;
+
+  }
+
+.btn-coffee .icon-sm {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+
+.btn-coffee:hover .icon-sm {
+  transform: translateX(5px);
+}
+
+
+
 
 .hero-section {
   display: grid;
@@ -470,3 +497,60 @@ img {
 .about-text + .about-text {
   margin-top: 1rem;
 }
+
+/* Diferenciadores */
+.perks-section {
+  background-color: var(--coral);
+  padding-block: 5rem;
+}
+
+
+.perks-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+
+@media (min-width: 640px) {
+  .perks-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .perks-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+.perk-item {
+  text-align: center;
+}
+
+
+.perk-icon {
+  margin-inline: auto;
+  display: grid;
+  place-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 9999px;
+  background-color: var(--cream);
+  color: var(--ink);
+}
+
+
+.perk-item h3 {
+  margin-top: 1.25rem;
+  font-size: 1.125rem;
+}
+
+
+.perk-item p {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--ink);
+}
+
